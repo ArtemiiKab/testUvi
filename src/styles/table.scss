@@ -1,0 +1,89 @@
+.SectionTable {
+  margin-top: 100px;
+  display: flex;
+
+  & tbody tr {
+    cursor: pointer;
+  }
+
+  &__left {
+    display: flex;
+    height: 100%;
+    width: 300px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: none;
+
+    & > * {
+      width: 100%;
+      height: 100%;
+      border-bottom: 1px solid black;
+    }
+
+    & > :last-child {
+      border: none;
+    }
+  }
+
+  &__right {
+    width: 100%;
+    background-color: #c6e0b4;
+    cursor: initial;
+
+    & p {
+      margin-left: 50px;
+    }
+
+    & div {
+      display: flex;
+      justify-content: space-between;
+     
+      & button {
+        border: none;
+        display: block;
+        width: 50px;
+        background-color: transparent;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__person {
+    & > div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      & > div {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+
+  &__chosen {
+    background-color: #c6e0b4;
+    position: relative;
+
+    &:after {
+      position: absolute;
+      content: "";
+      top: 50%;
+      left: 101%;
+      transform: translateY(-50%);
+      border-top: 15px solid transparent;
+      border-left: 30px solid #00b04f;
+      border-bottom: 15px solid transparent;
+    }
+  }
+
+  & table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  & td {
+    border: 1px solid black;
+  }
+}
