@@ -1,3 +1,3 @@
-# Base layout template with Gulp, SCSS and Stylelint
+Test task
 
-    - [DEMO LINK](https://ArtemiiKab.github.io/testUvi/)
+https://artemiikab.github.io/testUvi/
